@@ -20,3 +20,16 @@
 2.队列满：（rear+1）%maxSize == front  
 3.队列空：front == rear  
 4.有效数据的个数：（rear+maxSize-front）%maxSize
+
+## 链表
+### 1.单链表
+**要点**  
+1.链式存储  
+2.节点包含next域、data域
+3.分类：带头结点（head）节点和不带头结点
+### 2.双向链表
+**要点**
+1.data域、next指针、pre指针。
+### 3.单向环形链表
+**约瑟夫环的运用**  
+要点：设置两个辅助结点，first指向当前状态的第一个结点（即被移除的结点的下一个结点），helper指向first-->helper.next=first
