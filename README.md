@@ -7,3 +7,16 @@
 1.稀疏数组的每一列分别为元数组的row、column、value。  
 2.第一行为原数组有几行几列以及有几个有效值（不为0或者同一元素）  
 3.剩下的为第几行第几列的值是什么。  
+### 2.队列
+**要点**  
+1.先进先出
+#### 2.1用数组表示
+1.前后端下标：front、rear  
+2.最大容量：maxSize  
+3.队列空：front==rear  
+4.队列满：rear==maxSize-1  
+#### 2.2用数组表示循环队列
+1.front表示第一个元素，rear表示最后一个元素的后一个位置。  
+2.队列满：（rear+1）%maxSize == front  
+3.队列空：front == rear  
+4.有效数据的个数：（rear+maxSize-front）%maxSize
