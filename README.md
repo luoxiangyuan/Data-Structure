@@ -38,4 +38,10 @@
 **要点**  
 1.先进后出
 2.栈顶top、栈底bottom
-3.出栈pop入栈push
+3.出栈pop入栈push  
+### 1.数组实现
+1.初始化top=-1  
+2.push：top++，stack[top]=value  
+3.pop: sys.out.print(stack[top]), top--
+### 2.用栈实现计算器
+1.
